@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Request;
 class SponsoredUserController extends Controller
 {
    public function addUser(Request $request){
-         $sponsor_id = 41;
+         $sponsor_id = 17;
          $getChilds = $this->getChilds($sponsor_id);
          $totalChilds = count($getChilds);
             if($totalChilds == 0){
@@ -25,8 +25,8 @@ class SponsoredUserController extends Controller
             }
 
             $user = User::create([
-                'name' => '5test',
-                'email' => '5test@test.com',
+                'name' => '23test',
+                'email' => '23test@test.com',
                 'password' => 'password',
             ]);
 
